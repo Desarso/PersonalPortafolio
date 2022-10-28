@@ -1,0 +1,6 @@
+To host the production build in a container
+docker run -p 3000:3000  desarso/portafolio
+
+to re-create production image 
+
+ docker build -t desarso/portafolio .  
