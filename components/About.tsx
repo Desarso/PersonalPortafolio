@@ -39,14 +39,15 @@ function About({}: Props) {
         />
 
         <div className='space-y-10 px-0 md:px-10 mt-[5vh]'>
-            <h4 className='text-4xl font-semibold'>Here's a 
+            <h4 className='text-4xl font-semibold'>
+                    Here&apos;s a 
                 <span className='underline decoration-[#F7AB0A]/50'> little </span> 
                     background
             </h4>
             <p className='text-base'>
-                My name is Gabriel Malek, I'm a self taught web developer, long-time tech enthusiast, currently working on my CSC bachelors degree at CSUS.
+                My name is Gabriel Malek, I&apos;m a self taught web developer, long-time tech enthusiast, currently working on my CS bachelors degree at CSUS.
                 My love of coding started with a passion project working on a chrome extension
-                for my then job in tech repair. I build applications for the web, I love the idea of making fast performing,
+                while working in tech repair. I build applications for the web, I love the idea of making fast performing,
                 fully fledged applications for the browser, and making sure those applications scale accordingly. 
             </p>    
         </div>        
