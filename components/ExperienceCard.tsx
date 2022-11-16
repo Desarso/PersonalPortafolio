@@ -7,16 +7,19 @@ type Props = {}
 function ExperienceCard({}: Props) {
   return (
     <article className='flex flex-col rounded-lg items-center space-y-3 flex-shrink-0
-           pb-0 w-[90vw] h-[98%] md:w-[45%] md:h-[98%] xl:w-[30%] xl-h-[10vh] snap-center md:snap-start xl:snap-start bg-[#292929] p-10'>
+           pb-0 w-[70vw] ml-[15vw] h-[98%] md:w-[45%] md:h-[100%] xl:w-[30%] xl-h-[10vh] 
+           snap-center md:snap-start xl:snap-start bg-[#292929] p-10
+           hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200
+           overflow-hidden'>
         <motion.img 
             initial={{
-                y: -100,
+                y: "-100%",
                 opacity: 0.
             }}
             transition={{duration: 1.2}}
             whileInView={{ opacity: 1, y: 0}}
             viewport={{ once: true}}
-            className='w-[9vh] h-[9vh] rounded-full xl:w-[200px] xl:h-[200px] 
+            className='w-[11vh] h-[11vh] rounded-full 
             object-cover object-center'
         src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg" 
         alt="" />
@@ -38,7 +41,7 @@ function ExperienceCard({}: Props) {
             <p className='uppercase py-5 text-gray-300'>Started... Ended...</p>
 
             <ul className='list-disc space-y-4 ml-5 text-lg'>
-                <li>Summary Points</li>
+                <li>Summary Points </li>
                 <li>Summary Points</li>
                 <li>Summary Points</li>
                 <li>Summary Points</li>

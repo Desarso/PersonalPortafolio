@@ -41,8 +41,7 @@ function About({}: Props) {
         <div className='space-y-10 px-0 md:px-10 mt-[5vh]'>
             <h4 className='text-4xl font-semibold'>
                     Here&apos;s a 
-                <span className='underline decoration-[#F7AB0A]/50'> little </span> 
-                    background
+                 little background
             </h4>
             <p className='text-base'>
                 My name is Gabriel Malek, I&apos;m a self taught web developer, long-time tech enthusiast, currently working on my CS bachelors degree at CSUS.
