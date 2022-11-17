@@ -47,7 +47,7 @@ function About({}: Props) {
                 My name is Gabriel Malek, I&apos;m a self taught web developer, long-time tech enthusiast, currently working on my CS bachelors degree at CSUS.
                 My love of coding started with a passion project working on a chrome extension
                 while working in tech repair. I build applications for the web, I love the idea of making fast performing,
-                fully fledged applications for the browser, and making sure those applications scale accordingly. 
+                fully fledged applications for the browser, and using technologies that scale well.
             </p>    
         </div>        
     </motion.div>
