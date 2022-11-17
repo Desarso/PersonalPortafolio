@@ -22,18 +22,18 @@ function ContactMe({}: Props) {
   return (
     <div
       className="h-screen flex flex-col relative md:text-left md:flex-row
-    max-w-7xl justify-evenly mx-auto items-center"
+    max-w-7xl justify-evenly mx-auto items-center "
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
-      <div className="flex= flex-col space-y-10">
+      <div className="flex= flex-col space-y-10 contact-me mt-12">
         <h4 className="text-4xl font-semibold text-center">
           Let&apos;s work together
           <span className="decoration-[#F7AB0A]/50 underline"></span>
         </h4>
 
-        <div className="space-y-10">
+        <div className="space-y-2 contact-info">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="h-7 text-[#F7AB0A] animate-pulse" />
             <p className="text-gray-500 text-2xl">+1 978 873 0012</p>
@@ -49,19 +49,19 @@ function ContactMe({}: Props) {
 
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col space-y-2 mx-auto"
+            className="flex flex-col space-y-2 mx-auto max-w-[100vw]"
           >
-            <div className="flex space-x-2">
+            <div className="flex name-email-container space-x-2">
               <input
                 {...register("name")}
                 placeholder="Name"
-                className="contactInput"
+                className="contactInput name-field"
                 type="text"
               />
               <input
                 {...register("email")}
                 placeholder="Email"
-                className="contactInput"
+                className="contactInput email-field"
                 type="email"
               />
             </div>

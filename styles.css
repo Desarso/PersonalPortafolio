@@ -42,22 +42,10 @@
 @media (max-width: 640px) {
   .name-field {
     width: 100%;
-    margin-left: 0 !important;
-    margin-top: 0.5rem;
-  }
-  .email-field {
-    width: 100%;
-    margin-left: 0 !important;
-    margin-top: 0.5rem;
   }
   .name-email-container {
     flex-direction: column;
     margin-left: 0;
-  }
-  .contact-me {
-    margin-top: 2rem;
-  }
-  .contact-info .flex {
-    margin-top: 0.5rem !important;
+    margin-top: 0.5rem;
   }
 }
