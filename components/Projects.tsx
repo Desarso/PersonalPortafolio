@@ -20,7 +20,7 @@ function Projects({}: Props) {
         "
     >
      
-      <h3 className="absolute xl:pl-[70px] top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute ml-3 top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
       <div
@@ -44,7 +44,7 @@ function Projects({}: Props) {
             whileInView={{opacity: 1,y: 0}}
             viewport={{once: true}}
 
-            className="w-[50vmin] aspect-square max-h-[50vh] md:max-w-[540px]   rounded-3xl shadow-2xl mt-10"/>
+            className="w-[50vmin] aspect-square max-h-[50vh] md:max-w-[540px]   rounded-3xl shadow-2xl mt-[20vh]"/>
             
             <div className="space-y-10 px-0 md:px-10 max-width-6xl">
               <h4 className="text-4xl font-semibold text-center">

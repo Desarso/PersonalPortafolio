@@ -15,7 +15,7 @@ function Skills({}: Props) {
             justify-center
             mx-auto items-center
             '>
-        <h3 className='absolute xl:pl-[70px] top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
             Skills
         </h3> 
         <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm'>
