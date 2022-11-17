@@ -1,0 +1,17 @@
+.left-arrow{
+    transform: rotate(180deg);
+
+}
+
+.arrow{
+    transition-duration: 200ms;
+}
+
+
+.left-arrow:hover{
+    transform: scale(1.5) rotate(180deg) translateX(-.5vh);
+}
+
+.right-arrow:hover{
+    transform: scale(1.5) translateX(-.5vh);
+}

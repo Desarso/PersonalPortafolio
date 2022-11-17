@@ -1,4 +1,6 @@
 import React from "react";
+import Arrow from './images/arrow.svg';
+import Link from 'next/link'
 
 type Props = {};
 
@@ -8,17 +10,19 @@ function Projects({}: Props) {
   return (
     <div
       className="h-screen relative flex overflow-hidden flex-col
-        text-left md:flex-row max-w-full justify-evenly mx-auto items-center  z-0"
+        text-left  max-w-full justify-evenly mx-auto items-center  z-0"
     >
+      //md:flex-row
       <h3 className="absolute xl:pl-[70px] top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
       <div
         className="relative w-full flex overflow-x-scroll
-        overflow-y-hidden snap-x snap-mandatory z-20"
+        overflow-y-hidden snap-x snap-mandatory z-20 scroll-smooth"
       >
         {projects.map((project, i) => (
           <div
+          key={i}
             className="w-screen flex-shrink-0 snap-center
                     flex flex-col space-y-5 items-center justify-center
                      p-20 md:pd-44 h-screen"
@@ -29,10 +33,41 @@ function Projects({}: Props) {
                <span className="underline decoration-[#F7AB0A]/50">Case Study {i + 1} of {projects.length}: </span> 
                     UPS clone
               </h4>
-              <p className="text-lg text-center- md:text-left">
+              <div 
+              id={`project-${i}`}
+              className=" text-lg text-center- md:text-left flex flex-row items-center relative">
+                {
+                  i != 0 && (
+                    <Link href={`#project-${i-1}`}>
+                    <div className=" hidden sm:block selection:w-[6vh] h-[6vh] absolute arrow left-arrow -left-20
+                    "
+                    >
+                      <img src={Arrow.src} alt="" className="h-[inherit]"/>
+                    </div>
+                    </Link>
+                  )
+                }
+               
+               
+
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi earum ab aliquid nobis quos ea tempora, necessitatibus consectetur voluptatum distinctio minus voluptates laboriosam, a quia ut cumque sit dicta adipisci.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem at aliquam veritatis autem? Ipsum molestiae error nulla facere voluptatibus sint commodi, incidunt earum adipisci saepe, hic, harum veniam consequuntur!
-                </p>
+
+                {
+                  i != projects.length - 1 && (
+                    <Link href={`#project-${i+1}`}>
+                    <div className="w-[6vh] h-[inherit] absolute arrow right-arrow
+                      -right-20 hidden sm:block
+                    "
+                     >
+                      <img src={Arrow.src} alt="" className="h-[inherit]"/>
+                    </div>
+                    </Link>
+                  )
+                }
+              
+              
+                </div>
             </div>
           </div>
         ))}

@@ -1,0 +1,15 @@
+.left-arrow {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  transition-duration: 200ms;
+}
+
+.left-arrow:hover {
+  transform: scale(1.5) rotate(180deg) translateX(-0.5vh);
+}
+
+.right-arrow:hover {
+  transform: scale(1.5) translateX(-0.5vh);
+}/*# sourceMappingURL=styles.css.map */
