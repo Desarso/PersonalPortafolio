@@ -5,6 +5,7 @@
 
 .arrow{
     transition-duration: 200ms;
+    fill: rgba(200, 200, 200, 0.705);
 }
 
 
@@ -14,4 +15,31 @@
 
 .right-arrow:hover{
     transform: scale(1.5) translateX(-.5vh);
+}
+
+.social-svg-icon{
+    // fill: white !important;
+    transition-duration: 200ms  !important;
+}
+
+.social-container:hover{
+    .social-svg-icon{
+        fill: #cbc8c8 !important;
+    }
+}
+
+.icon{
+    transition-duration: 200ms  !important;
+}
+
+.icon:hover{
+    color: #cbc8c8  ;
+}
+
+.contactInput{
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4
+    border-[#242424] text-gray-500 
+    transition-all focus:border-[#F7AB0A]/40
+    focus:text-[#F7AB0A]/40
+    hover:border-[#F7AB0A]/40
 }

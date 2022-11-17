@@ -1,6 +1,8 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion"
+import Link from 'next/link'
+
 
 type Props = {}
 
@@ -25,18 +27,24 @@ function Header({}: Props) {
             }}
             className='flex flex-row items-center'>
             {/* Social Icons */}
-            <SocialIcon 
+            <SocialIcon
+            className='.icon'
               url="https://twitter.com/desarso" 
-              fgColor='grey' bgColor='transparent'/>
-            <SocialIcon 
+              fgColor='grey' bgColor='transparent'
+              
+              />
+            <SocialIcon
+             className='.icon'
               url="https://www.instagram.com/desardo" 
               fgColor='grey' 
               bgColor='transparent' />
-            <SocialIcon 
+            <SocialIcon
+             className='.icon' 
               url="https://github.com/Desarso"
               fgColor='gray' 
               bgColor='transparent'/>
-            <SocialIcon 
+            <SocialIcon
+             className='.icon' 
               url="https://www.linkedin.com/in/gabriel-m-aa6534122/" 
               fgColor='gray' 
               bgColor='transparent'/>
@@ -62,8 +70,12 @@ function Header({}: Props) {
               network='email'
               fgColor='gray' 
               bgColor='transparent'
+              url="#contact"
              />
-            <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get in Touch</p>
+             <Link href={"#contact"}>
+              <p className='uppercase hidden md:inline-flex text-sm text-gray-400 icon'>Get in Touch</p>
+             </Link>
+          
             
         </motion.div>
     </header>
