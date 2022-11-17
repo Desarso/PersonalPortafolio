@@ -46,7 +46,7 @@
 
 "@heroicons/react@^2.0.13":
   version "2.0.13"
-  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.13.tgz#9b1cc54ff77d6625c9565efdce0054a4bcd9074c"
+  resolved "https://registry.npmjs.org/@heroicons/react/-/react-2.0.13.tgz"
   integrity sha512-iSN5XwmagrnirWlYEWNPdCDj9aRYVD/lnK3JlsC9/+fqGF80k8C7rl+1HCvBX0dBoagKqOFBs6fMhJJ1hOg1EQ==
 
 "@humanwhocodes/config-array@^0.11.6":
@@ -1770,7 +1770,7 @@ react-dom@18.2.0:
 
 react-hook-form@^7.39.4:
   version "7.39.4"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.39.4.tgz#7d9edf4e778a0cec4383f0119cd0699e3826a14a"
+  resolved "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.39.4.tgz"
   integrity sha512-B0e78r9kR9L2M4A4AXGbHoA/vyv34sB/n8QWJAw33TFz8f5t9helBbYAeqnbvcQf1EYzJxKX/bGQQh9K+evCyQ==
 
 react-is@^16.13.1:

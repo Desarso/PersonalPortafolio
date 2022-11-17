@@ -1,8 +1,8 @@
 import React from "react";
 import Link from 'next/link'
-import Chess from './images/chess.jpg';
+import Chess from './images/chessBoard.jpg';
 import Arrow from '../components/Arrow';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -19,7 +19,7 @@ function Projects({}: Props) {
         
         "
     >
-      //md:flex-row
+     
       <h3 className="absolute xl:pl-[70px] top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
