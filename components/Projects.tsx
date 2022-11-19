@@ -37,7 +37,7 @@ function Projects({}: Props) {
           >
             <motion.img src={Chess.src}
             initial={{
-              y: -300,
+              y: "-20%",
               opacity: 0,
             }}
             transition={{ duration: 1.2 }}
@@ -52,7 +52,7 @@ function Projects({}: Props) {
                     UPS clone
               </h4>
               <div 
-              className=" text-lg text-center- md:text-left flex flex-row items-center relative">
+              className="sm-display-none text-lg text-center- md:text-left flex flex-row items-center relative">
                 {
                   i != 0 && (
                     <Link href={`#project-${i}`}>

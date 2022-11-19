@@ -28,21 +28,19 @@ function Header({}: Props) {
             className='flex flex-row items-center'>
             {/* Social Icons */}
             <SocialIcon
+             className='.icon' 
+              url="https://github.com/Desarso"
+              fgColor='gray' 
+              bgColor='transparent'/>
+            <SocialIcon
             className='.icon'
               url="https://twitter.com/desarso" 
-              fgColor='grey' bgColor='transparent'
-              
-              />
+              fgColor='grey' bgColor='transparent'/>
             <SocialIcon
              className='.icon'
               url="https://www.instagram.com/desardo" 
               fgColor='grey' 
               bgColor='transparent' />
-            <SocialIcon
-             className='.icon' 
-              url="https://github.com/Desarso"
-              fgColor='gray' 
-              bgColor='transparent'/>
             <SocialIcon
              className='.icon' 
               url="https://www.linkedin.com/in/gabriel-m-aa6534122/" 

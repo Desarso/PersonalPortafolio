@@ -41,18 +41,13 @@
 
 @media (max-width: 640px) {
   .name-field {
-    width: 100%;
-    margin-left: 0 !important;
     margin-top: 0.5rem;
   }
   .email-field {
-    width: 100%;
-    margin-left: 0 !important;
     margin-top: 0.5rem;
   }
   .name-email-container {
     flex-direction: column;
-    margin-left: 0;
   }
   .contact-me {
     margin-top: 2rem;
@@ -60,4 +55,50 @@
   .contact-info .flex {
     margin-top: 0.5rem !important;
   }
+  .sm-display-none {
+    display: none;
+  }
+  .contact-info {
+    margin-top: 25% !important;
+    float: left;
+  }
+  form div input {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+  form input, form textarea, form button {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .about-image {
+    margin-top: 5vh !important;
+  }
+  .about-title {
+    margin-top: 5vh !important;
+  }
 }
+@media (max-width: 640px) and (max-height: 740px) {
+  .about-image {
+    margin-top: 20vh !important;
+  }
+  .about-title {
+    margin-top: 20vh !important;
+  }
+}
+@media (max-width: 300px) and (min-height: 600px) {
+  .about-image {
+    margin-top: 20vh !important;
+  }
+  .about-title {
+    margin-top: 20vh !important;
+  }
+}
+@media (max-width: 300px) {
+  .about-title p {
+    font-size: 12px;
+    text-align: left;
+    width: 100vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */

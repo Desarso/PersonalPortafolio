@@ -34,11 +34,11 @@ function About({}: Props) {
         }}
         key = {aboutImage.src}
         src={aboutImage.src}
-        className="-mb-[20vh] mt-[5vh] md:mb-[10vh] flex-shrink-0 w-36 h-36 rounded-full object-cover 
+        className="about-image -mb-[20vh] mt-[5vh] md:mb-[10vh] flex-shrink-0 w-36 h-36 rounded-full object-cover 
          md:rounded-lg md:w-64 md:h-[40vh] xl:w-[500px] xl:h-[72vh]"
         />
 
-        <div className='space-y-10 px-0 md:px-10 mt-[5vh]'>
+        <div className='about-title space-y-10 px-0 md:px-10 mt-[5vh]'>
             <h4 className='text-4xl font-semibold'>
                     Here&apos;s a 
                  little background
