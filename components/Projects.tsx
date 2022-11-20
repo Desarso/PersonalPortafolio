@@ -3,11 +3,30 @@ import Link from 'next/link'
 import Chess from './images/chessBoard.jpg';
 import Arrow from '../components/Arrow';
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
 
 type Props = {};
 
 function Projects({}: Props) {
   const projects = [1, 2, 3, 4, 5];
+  let elementHolder;
+  let [currentId, setCurrentId] = useState('none');
+
+  
+  useEffect(() => {
+    elementHolder = document.getElementById(currentId);
+    elementHolder?.scrollIntoView({behavior: 'smooth'});
+  },[currentId])
+
+
+
+  function scrollToElement(id: string){
+    // const element = document.getElementById(id);
+    // element?.scrollIntoView({behavior: 'smooth'});
+    console.log(id);
+    setCurrentId(id);
+  }
 
   return (
     <motion.div
@@ -55,13 +74,13 @@ function Projects({}: Props) {
               className="sm-display-none text-lg text-center- md:text-left flex flex-row items-center relative">
                 {
                   i != 0 && (
-                    <Link href={`#project-${i}`}>
-                    <div className=" hidden sm:block selection:w-[6vh] h-[6vh] absolute arrow left-arrow -left-20
-                    "
-                    >
+                    // <Link href={`#project-${i}`}>
+                    <div className=" hidden sm:block selection:w-[6vh] h-[6vh] absolute arrow left-arrow -left-20"
+                    onClick={() =>scrollToElement(`project-${i}`)}>
+                    
                       <Arrow/>
                     </div>
-                    </Link>
+                    // </Link>
                   )
                 }
                
@@ -72,14 +91,14 @@ function Projects({}: Props) {
 
                 {
                   i != projects.length - 1 && (
-                    <Link href={`#project-${i+2}`}>
                     <div className="w-[6vh] h-[inherit] absolute arrow right-arrow
                       -right-20 hidden sm:block
                     "
+                    onClick={() =>scrollToElement(`project-${(i+2)}`)}
                      >
                       <Arrow/>
                     </div>
-                    </Link>
+
                   )
                 }
               

@@ -2,11 +2,30 @@ import Link from 'next/link'
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
+import { useState, useEffect } from 'react'
 
 
 type Props = {}
 
 function Hero({}: Props) {
+  let elementHolder;
+  let [currentId, setCurrentId] = useState('none');
+
+  useEffect(() => {
+    elementHolder = document.getElementById(currentId);
+    elementHolder?.scrollIntoView({behavior: 'smooth'});
+  },[currentId])
+
+
+
+  function scrollToElement(id: string){
+    setCurrentId(id);
+  }
+
+
+
+
+
     const [text, count] = useTypewriter({
         words: [
             "Hi I'm Gabriel",
@@ -34,18 +53,13 @@ function Hero({}: Props) {
               <Cursor cursorColor='#F7AB0A'/>
             </h1>
           <div className='pt-5'>
-            <Link href="#about">
-              <button className='heroButton'>About</button>
-            </Link>
-            <Link href="#experience">
-              <button className='heroButton'>Experience</button>
-            </Link>
-            <Link href="#skills">
-              <button className='heroButton'>Skills</button>
-            </Link>
-           <Link href="#projects">
-              <button className='heroButton'>Projects</button>
-           </Link> 
+              <button className='heroButton' onClick={() => scrollToElement('about')}>About</button>
+
+              <button className='heroButton' onClick={() => scrollToElement('experience')}>Experience</button>
+  
+              <button className='heroButton' onClick={() => scrollToElement('skills')}>Skills</button>
+  
+              <button className='heroButton' onClick={() => scrollToElement('projects')}>Projects</button>
           </div>
         </div>
       
